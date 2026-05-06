@@ -5,10 +5,10 @@ import { TechEntry, Technologies } from "@/components/elements/portfolio/Technol
 import {Code2, Coffee, Database, GitBranch, Layout, Monitor, Server} from "lucide-react";
 import { projectsData } from "@/app/projectsData";
 import {
-    SiArchlinux, SiDocker,
+    SiArchlinux, SiDocker, SiDrizzle,
     SiGit,
     SiGodotengine,
-    SiJavascript,
+    SiJavascript, SiJsonwebtokens,
     SiNodedotjs, SiPhp,
     SiPostgresql, SiPython,
     SiReact, SiShopify, SiTailwindcss,
@@ -90,6 +90,8 @@ export default function Home() {
         { title: "Linux", icon: <SiArchlinux color={"#1793D1"} className="w-8 h-8" /> },
         { title: "PHP", icon: <SiPhp color={"#777BB4"} className="w-8 h-8" /> },
         { title: "Python", icon: <SiPython color={"#3776AB"} className="w-8 h-8" /> },
+        { title: "JSON Web Tokens", icon: <SiJsonwebtokens className="w-8 h-8" /> },
+        { title: "DrizzleORM", icon: <SiDrizzle color={"#C5F74F"} className="w-8 h-8" /> },
     ];
 
     return (

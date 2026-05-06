@@ -2,11 +2,11 @@ import {ProjectEntry} from "@/components/elements/portfolio/Projects";
 
 export const projectsData: ProjectEntry[] = [
     {
-        title: "Symulacyjny program do antycheatu",
-        description: "Inspiracje zaczerpnąłem od youtubera @PrimerBlobs. Program ten polega na tym, że bazujac na prawdopodobieństwie oceniamy czy dany blob oszukuje. Ten program został stworzony w typescript korzystając z OOP",
-        image: "/blob.png",
+        title: "Backend dla systemu notatek",
+        description: "Backend napisany w DrizzleORM, Typescript, Express, JWT.",
+        image: "/backend.png",
         links: {
-            github: "https://github.com/WavyWare/blob-anticheat",
+            github: "https://github.com/WavyWare/note-backend",
         }
     },
     {
@@ -28,11 +28,12 @@ export const projectsData: ProjectEntry[] = [
         }
     },
     {
-        title: "Backend dla systemu notatek",
-        description: "Backend napisany w DrizzleORM, Typescript, Express, JWT.",
+        title: "Symulacyjny program do antycheatu",
+        description: "Inspiracje zaczerpnąłem od youtubera @PrimerBlobs. Program ten polega na tym, że bazujac na prawdopodobieństwie oceniamy czy dany blob oszukuje. Ten program został stworzony w typescript korzystając z OOP",
         image: "/blob.png",
         links: {
-            github: "https://github.com/WavyWare/note-backend",
+            github: "https://github.com/WavyWare/blob-anticheat",
         }
-    }
+    },
+
 ];
