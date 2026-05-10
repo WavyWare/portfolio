@@ -21,7 +21,7 @@ export default function Footer() {
                     <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200">
                         {t("contact")}
                     </Link>
-                    <a href="https://github.com" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200">
+                    <a href="https://github.com/WavyWare" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200">
                         GitHub
                     </a>
                 </nav>
