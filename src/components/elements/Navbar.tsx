@@ -1,26 +1,28 @@
 "use client";
 
-import React, { JSX } from 'react';
-import Link from "next/link";
-import { usePathname } from 'next/navigation';
-import { BadgeInfo, BriefcaseBusiness, Contact, FileUser, Presentation, Globe } from "lucide-react";
+import React, { JSX } from "react";
+import { Link, usePathname } from "@/i18n/navigation";
+import { BadgeInfo, BriefcaseBusiness, Contact, FileUser, Presentation } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
+import LanguageToggle from "@/components/ui/LanguageToggle";
 
 function Navbar() {
+    const t = useTranslations("Navbar");
     const pathname = usePathname();
 
-    interface navElem {
+    interface NavElem {
         href: string;
         title: string;
         icon: JSX.Element;
     }
 
-    const navElements: navElem[] = [
+    const navElements: NavElem[] = [
         { href: "/", title: "Portfolio", icon: <BriefcaseBusiness className="w-4 h-4 shrink-0" /> },
-        { href: "/projects", title: "Projekty", icon: <Presentation className="w-4 h-4 shrink-0" /> },
-        { href: "/about-me", title: "O mnie", icon: <BadgeInfo className="w-4 h-4 shrink-0" /> },
+        { href: "/projects", title: t("projects"), icon: <Presentation className="w-4 h-4 shrink-0" /> },
+        { href: "/about-me", title: t("aboutMe"), icon: <BadgeInfo className="w-4 h-4 shrink-0" /> },
         { href: "/cv", title: "CV", icon: <FileUser className="w-4 h-4 shrink-0" /> },
-        { href: "/contact", title: "Kontakt", icon: <Contact className="w-4 h-4 shrink-0" /> }
+        { href: "/contact", title: t("contact"), icon: <Contact className="w-4 h-4 shrink-0" /> }
     ];
 
     return (
@@ -29,14 +31,16 @@ function Navbar() {
                 <ul className="flex flex-wrap justify-center items-center gap-1 sm:gap-2">
                     {navElements.map((navElem, key) => {
                         const isActive = pathname === navElem.href;
+
                         return (
                             <li key={key} className="shrink-0">
-                                <Link 
-                                    href={navElem.href} 
+                                <Link
+                                    href={navElem.href}
+                                    aria-current={isActive ? "page" : undefined}
                                     className={cn(
                                         "flex items-center gap-1.5 md:gap-2 rounded-full transition-all duration-200 px-3 md:px-4 py-2 text-sm font-medium",
-                                        isActive 
-                                            ? "bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300" 
+                                        isActive
+                                            ? "bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300"
                                             : "text-muted-foreground hover:bg-muted hover:text-foreground"
                                     )}
                                 >
@@ -47,17 +51,11 @@ function Navbar() {
                         );
                     })}
                 </ul>
-                <div className="hidden sm:block w-px h-6 bg-border mx-2"></div>
-                <div className="flex sm:hidden w-full h-px bg-border my-1"></div>
-                
-                <Link 
-                    href="/en"
-                    className="flex items-center gap-2 px-3 py-2 rounded-full text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground transition-colors shrink-0"
-                    title="Translate to English"
-                >
-                    <Globe className="w-4 h-4" />
-                    <span>EN</span>
-                </Link>
+
+                <div className="hidden sm:block w-px h-6 bg-border mx-2" />
+                <div className="flex sm:hidden w-full h-px bg-border my-1" />
+
+                <LanguageToggle />
             </nav>
         </div>
     );

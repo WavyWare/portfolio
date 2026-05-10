@@ -1,0 +1,68 @@
+{
+  "MyPresentation": {
+    "description": "Uczeń 3 klasy technikum programistycznego. Tworze front-end i back-end aplikacji webowych.",
+    "showCv": "Zobacz CV"
+  },
+  "MainPage": {
+    "education": "Edukacja",
+    "experience": "Doświadczenie",
+    "competitions": "Konkursy",
+    "projects": "Moje Projekty",
+    "technologies": "Technologie"
+  },
+  "Navbar": {
+    "projects": "Projekty",
+    "aboutMe": "O mnie",
+    "contact": "Kontakt"
+  },
+  "Timelines": {
+    "gornik_subtitle": "Technik programista",
+    "gornik_date": "2023 - Obecnie",
+    "gornik_desc1": "Rozwój umiejętności w zakresie tworzenia aplikacji webowych, desktopowych i mobilnych.",
+    "gornik_desc2":"Nauka baz danych, algorytmiki i struktur danych.",
+    "wasys_date": "kwiecień 2026 - Obecnie",
+    "wasys_desc1": "Budowa portfolio",
+    "wasys_desc2": "Nauka Wordpressa i technologii e-commerce",
+    "wasys_desc3": "Nauka poprawnej komunikacji z klientem",
+    "nasa_2025_subtitle": "Uczestnik",
+    "nasa_2025_date": "Październik 2025",
+    "nasa_2025_desc1": "Budowa aplikacji dotyczącej egzoplanet, gdzie użytkownicy mogli dowiadywać się faktów na ich temat",
+    "nasa_2026_subtitle": "#1 Zwycięsca",
+    "nasa_2026_date": "Październik 2026",
+    "nasa_2026_desc1": "Stworzenie aplikacji pomagającej urbanistom optymalizować prace za pomocą zdjęć satelitarnych i analizie AI",
+    "techquest_2026_subtitle": "#10 miejsce",
+    "techquest_2026_date": "Marzec 2026",
+    "techquest_2026_desc1": "Stworzenie gry promocyjnej dla HSW przedstawiającej historie ich marki"
+  },
+  "ProjectEntries": {
+    "anticheat_title": "Symulacyjny program do antycheatu",
+    "anticheat_description": "Inspiracje zaczerpnąłem od youtubera @PrimerBlobs. Program ten polega na tym, że bazujac na prawdopodobieństwie oceniamy czy dany blob oszukuje. Ten program został stworzony w typescript korzystając z OOP",
+    "calculator_title": "Kalkulator inwestycyjny",
+    "calculator_description": "Zaawansowany kalkulator inwestycyjny pozwalający na tworzenie scenariuszy wpłat i wypłat, porównywanie scenariuszy inwestycyjnych i eksport prognoz.",
+    "hsw_title": "Stalowy Szlak - Gra promocyjna dla HSW",
+    "hsw_description": "Gra wykonana podczas hackathonu w ZST Leżajsk o lokalnym przemyśle zbrojnym",
+    "backend_title": "Backend dla systemu notatek",
+    "backend_description": "Backend napisany w DrizzleORM, Typescript, Express, JWT."
+  },
+  "Projects": {
+    "showAll": "Zobacz wszystkie projekty",
+    "allProjects": "Wszystkie projekty"
+  },
+  "AboutMe": {
+    "title": "O mnie",
+    "description": "Cześć! Jestem Jan, uczeń 3 klasy technikum programistycznego z pasją do projektowania i  tworzenia nowoczesnych aplikacji webowych. Poza tym tworze też elektronike bazowaną na mikrokontrolerach i mikrokomputerach.\nTworze oprogramowanie bazując na najnowszej technologii na rynku. Główne technologie to Typescript, Next.js, Tailwind.css, Express.js i DrizzleORM. Na codzień korzystam z Linux Arch"
+  },
+  "CV": {
+    "description": "Poniżej znajduje się moje aktualne Curriculum Vitae. Możesz je pobrać w klasycznym formacie PDF, wydrukować lub zapisać na potrzeby rekrutacji.",
+    "previewUnavailable": "Podgląd PDF będzie dostępny wkrótce",
+    "download": "Pobierz dokument (PDF)",
+    "lastUpdate": "Ostatnia aktualizacja: Maj 2026"
+  },
+  "Contact": {
+    "title": "Kontakt",
+    "cta": "Masz projekt do zrealizowania lub po prostu chcesz porozmawiać o technologiach i kodzie?\n                Napisz! Zawsze jestem otwarty na nowe wyzwania i ciekawe współprace.",
+    "responseTime": "Odpowiadam zwykle w ciągu 24 godzin"
+
+  }
+
+}

@@ -1,7 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import {Link} from '@/i18n/navigation';
 import { GitBranch, ExternalLink } from 'lucide-react';
+import {useTranslations} from "next-intl";
+
 
 export interface ProjectEntry {
     title: string;
@@ -16,10 +18,20 @@ export interface ProjectEntry {
 interface ProjectsProps {
     data: ProjectEntry[];
     limit?: number;
-    title?: string;
+    title: string;
 }
 
-export function Projects({ data, limit, title = "Moje Projekty" }: ProjectsProps) {
+export function Projects({ data, limit, title }: ProjectsProps) {
+    const t = useTranslations("ProjectEntries");
+    const projectsT = useTranslations("Projects")
+    data = data.map((entry) => {
+        return {
+            title: t(entry.title),
+            description: t(entry.description),
+            image: entry.image,
+            links: entry.links
+        }
+    })
     if (!data || data.length === 0) return null;
     const displayData = limit ? data.slice(0, limit) : data;
 
@@ -68,7 +80,7 @@ export function Projects({ data, limit, title = "Moje Projekty" }: ProjectsProps
             {limit && data.length > limit && (
                 <div className="flex justify-center pt-10">
                     <Link href="/projects" className="px-6 py-2 rounded-full border border-border text-sm font-medium hover:bg-muted transition-colors">
-                        Zobacz wszystkie projekty
+                        {projectsT("showAll")}
                     </Link>
                 </div>
             )}

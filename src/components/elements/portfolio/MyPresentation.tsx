@@ -1,6 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
-import { FileText, Mail } from "lucide-react";
+import {Link} from '@/i18n/navigation';
+import { FileText } from "lucide-react";
+import {useTranslations} from "next-intl";
 
 const GithubIcon = ({ className }: { className?: string }) => (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -17,6 +18,7 @@ const LinkedinIcon = ({ className }: { className?: string }) => (
 );
 
 export const MyPresentation = () => {
+    const t = useTranslations('MyPresentation');
     return (
         <section className="w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12 py-12 md:py-20">
             <div className="flex flex-col items-center md:items-start justify-center flex-1 space-y-6 md:space-y-8 text-center md:text-left">
@@ -29,7 +31,7 @@ export const MyPresentation = () => {
                     </h2>
                 </div>
                 <div className="text-lg md:text-xl leading-relaxed max-w-lg text-muted-foreground font-medium">
-                    <p>Uczeń 3 klasy technikum programistycznego. Tworze front-end i back-end aplikacji webowych.</p>
+                    <p>{t("description")}</p>
                 </div>
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
                     <a href="https://www.linkedin.com/in/jan-florek-76b4072ab/" target="_blank" rel="noreferrer" className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-border hover:bg-muted transition-colors text-sm font-medium shadow-sm">
@@ -42,7 +44,7 @@ export const MyPresentation = () => {
                     </a>
                     <Link href="/cv" className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-foreground text-background hover:bg-foreground/90 transition-colors text-sm font-medium shadow-sm">
                         <FileText className="w-4 h-4" />
-                        Zobacz CV
+                        {t("showCv")}
                     </Link>
                 </div>
             </div>

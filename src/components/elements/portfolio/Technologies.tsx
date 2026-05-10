@@ -6,16 +6,17 @@ export interface TechEntry {
 }
 
 interface TechnologiesProps {
-    data: TechEntry[];
+    data: TechEntry[],
+    title: string,
 }
 
-export function Technologies({ data }: TechnologiesProps) {
+export function Technologies({ data, title }: TechnologiesProps) {
     if (!data || data.length === 0) return null;
 
     return (
         <section className="w-full py-12 space-y-2">
             <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-foreground font-serif">
-                Technologie
+                {title}
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-0 border-t border-l border-border mt-4">
                 {data.map((tech, idx) => (

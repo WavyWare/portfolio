@@ -1,0 +1,66 @@
+{
+  "MyPresentation": {
+    "description": "Student in 3rd year of technical school focused on programming. I code front-end and back-end for web apps.",
+    "showCv": "Show CV"
+  },
+  "MainPage": {
+    "education": "Education",
+    "experience": "Experience",
+    "competitions": "Competitions",
+    "projects": "My Projects",
+    "technologies": "Technologies"
+  },
+  "Navbar": {
+    "projects": "Projects",
+    "aboutMe": "About Me",
+    "contact": "Contact"
+  },
+  "Timelines": {
+    "gornik_subtitle": "Coding technical class",
+    "gornik_date": "2023 - now",
+    "gornik_desc1": "Development of skills in creating web, desktop and mobile applications.",
+    "gornik_desc2":"Learning about databases, algorithms and data structures.",
+    "wasys_date": "April 2026 - now",
+    "wasys_desc1": "Building a portfolio",
+    "wasys_desc2": "Learning WordPress and e-commerce technologies",
+    "wasys_desc3": "Learning how to communicate properly with clients",
+    "nasa_2025_subtitle": "Participant",
+    "nasa_2025_date": "October 2025",
+    "nasa_2025_desc1": "Building an app about exoplanets where users could learn facts about them",
+    "nasa_2026_subtitle": "#1 Winner",
+    "nasa_2026_date": "October 2026",
+    "nasa_2026_desc1": "Creating an application that helps urban planners optimize their work using satellite imagery and AI analysis",
+    "techquest_2026_subtitle": "#10 place",
+    "techquest_2026_date": "March 2026",
+    "techquest_2026_desc1": "Creating a promotional game for HSW presenting the history of their brand"
+  },
+  "ProjectEntries": {
+    "anticheat_title": "Simulation anti-cheat program",
+    "anticheat_description": "I got inspired from YouTuber @PrimerBlobs. This program uses probability to determine whether a blob is cheating. This program was created in TypeScript using OOP.",
+    "calculator_title": "Investment compound calculator",
+    "calculator_description": "An advanced investment calculator that allows you to create deposit and withdrawal scenarios, compare investment scenarios and export your scenarios.",
+    "hsw_title": "Stalowy Szlak - Promotional game for HSW",
+    "hsw_description": "A game about the local arming industry created during a hackathon at ZST Leżajsk",
+    "backend_title": "Backend for the notes system",
+    "backend_description": "Backend written in DrizzleORM, Typescript, Express, JWT."
+  },
+  "Projects": {
+    "showAll": "See all projects",
+    "allProjects": "All projects"
+  },
+  "AboutMe": {
+    "title": "About me",
+    "description": "Hi! I'm Jan, a student in the 3rd year of a technical school focused on programming, with a passion for designing and creating modern web applications. Besides that, I also create electronics based on microcontrollers and microcomputers.\nI develop software using the latest technology available on the market. The main technologies I use are TypeScript, Next.js, Tailwind CSS, Express.js, and Drizzle ORM. I regularly work with Arch Linux."
+  },
+  "CV": {
+    "description": "Below, you can see my current Curriculum Vitae. You can download it in PDF format or print it.",
+    "previewUnavailable": "PDF preview will be available soon",
+    "download": "Download document (PDF)",
+    "lastUpdate": "Last update: May 2026"
+  },
+  "Contact": {
+    "title": "Contact",
+    "cta": "Do you have a project to realize, or do you just want to talk about technologies and code? Write to me! I’m always open to new challenges and interesting collaborations.",
+    "responseTime": "I usually respond within 24 hours."
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import {useTranslations} from "next-intl";
 
 export interface TimelineEntry {
     title: string;
@@ -15,6 +16,7 @@ interface TimelineProps {
 }
 
 export function Timeline({ data, title }: TimelineProps) {
+    const t = useTranslations("Timelines")
     if (!data || data.length === 0) return null;
 
     return (
@@ -44,7 +46,7 @@ export function Timeline({ data, title }: TimelineProps) {
                             <ul className="space-y-1.5 text-muted-foreground text-sm md:text-base pl-5 list-disc mt-3 marker:text-muted-foreground/50">
                                 {item.description.map((desc, i) => (
                                     <li key={i} className="leading-relaxed pl-1">
-                                        {desc}
+                                        {t(desc)}
                                     </li>
                                 ))}
                             </ul>
