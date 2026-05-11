@@ -2,7 +2,6 @@ import { MyPresentation } from "@/components/elements/portfolio/MyPresentation";
 import { Timeline, TimelineEntry } from "@/components/elements/portfolio/Timeline";
 import { Projects } from "@/components/elements/portfolio/Projects";
 import { TechEntry, Technologies } from "@/components/elements/portfolio/Technologies";
-import {Coffee} from "lucide-react";
 import { projectsData } from "@/app/[locale]/projectsData";
 import {
     SiArchlinux, SiDocker,
@@ -12,8 +11,9 @@ import {
     SiPostgresql, SiPython,
     SiReact, SiShopify, SiTailwindcss,
     SiTypescript, SiWoocommerce, SiWordpress
-} from "@icons-pack/react-simple-icons";
+} from "react-icons/si";
 import {useTranslations} from "next-intl";
+import {RiJavaLine} from "react-icons/ri";
 const educationData: TimelineEntry[] = [
     {
         title: "Zespół Szkół im. ks. Stanisława Staszica w Tarnobrzegu",
@@ -74,7 +74,7 @@ const techData: TechEntry[] = [
     { title: "Git", icon: <SiGit color={"#F05032"} className="w-8 h-8" /> },
     { title: "Godot", icon: <SiGodotengine color={"#478CBF"} className="w-8 h-8" /> },
     { title: "Docker", icon: <SiDocker color={"#2496ED"} className="w-8 h-8" /> },
-    { title: "Java", icon: <Coffee className="w-8 h-8" /> },
+    { title: "Java", icon: <RiJavaLine className="w-8 h-8" /> },
     { title: "Wordpress", icon: <SiWordpress color={"#21759B"} className="w-8 h-8" /> },
     { title: "WooCommerce", icon: <SiWoocommerce color={"#96588A"} className="w-8 h-8" /> },
     { title: "Shopify", icon: <SiShopify color={"#7AB55C"} className="w-8 h-8" /> },

@@ -2,10 +2,13 @@
 
 import React, { JSX } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
-import { BadgeInfo, BriefcaseBusiness, Contact, FileUser, Presentation } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import LanguageToggle from "@/components/ui/LanguageToggle";
+import {GrOverview} from "react-icons/gr";
+import {LuPresentation} from "react-icons/lu";
+import {IoMdContacts, IoMdInformationCircleOutline} from "react-icons/io";
+import {TbFileCv} from "react-icons/tb";
 
 function Navbar() {
     const t = useTranslations("Navbar");
@@ -18,11 +21,11 @@ function Navbar() {
     }
 
     const navElements: NavElem[] = [
-        { href: "/", title: "Portfolio", icon: <BriefcaseBusiness className="w-4 h-4 shrink-0" /> },
-        { href: "/projects", title: t("projects"), icon: <Presentation className="w-4 h-4 shrink-0" /> },
-        { href: "/about-me", title: t("aboutMe"), icon: <BadgeInfo className="w-4 h-4 shrink-0" /> },
-        { href: "/cv", title: "CV", icon: <FileUser className="w-4 h-4 shrink-0" /> },
-        { href: "/contact", title: t("contact"), icon: <Contact className="w-4 h-4 shrink-0" /> }
+        { href: "/", title: "Portfolio", icon: <GrOverview className="w-4 h-4 shrink-0" /> },
+        { href: "/projects", title: t("projects"), icon: <LuPresentation className="w-4 h-4 shrink-0" /> },
+        { href: "/about-me", title: t("aboutMe"), icon: <IoMdInformationCircleOutline className="w-4 h-4 shrink-0" /> },
+        { href: "/cv", title: "CV", icon: <TbFileCv className="w-4 h-4 shrink-0" /> },
+        { href: "/contact", title: t("contact"), icon: <IoMdContacts className="w-4 h-4 shrink-0" /> }
     ];
 
     return (
@@ -55,7 +58,7 @@ function Navbar() {
                 <div className="hidden sm:block w-px h-6 bg-border mx-2" />
                 <div className="flex sm:hidden w-full h-px bg-border my-1" />
 
-                <LanguageToggle />
+                <LanguageToggle className={"rounded-full"}/>
             </nav>
         </div>
     );

@@ -1,6 +1,9 @@
-import {Mail, Phone} from "lucide-react";
 import React from "react";
 import {useTranslations} from "next-intl";
+import {Link} from "@/i18n/navigation";
+import {RiMailLine, RiTelegram2Line} from "react-icons/ri";
+import {LuLinkedin} from "react-icons/lu";
+import {RxDiscordLogo} from "react-icons/rx";
 
 export default function ContactPage() {
     const t = useTranslations("Contact");
@@ -13,15 +16,23 @@ export default function ContactPage() {
             <p className="text-muted-foreground text-center mb-10 leading-relaxed text-base md:text-lg font-medium max-w-lg mx-auto">
                 {t("cta")}
             </p>
-            <div className="w-full border-t border-l border-border grid grid-cols-1">
-                <div className="flex flex-col items-center gap-4 p-8 border-r border-b border-border bg-transparent hover:bg-muted/10 transition-colors md:col-span-2">
-                    <Mail className="w-6 h-6 text-muted-foreground/60" strokeWidth={1.5} />
+            <div className="w-full border-t border-l border-border grid grid-cols-3">
+                <Link href={"mailto:wavyware1@proton.me"} className="flex flex-col items-center gap-4 p-8 border-r border-b border-border bg-transparent hover:bg-muted/10 transition-colors col-span-3">
+                    <RiMailLine className="w-6 h-6 text-muted-foreground/60" color={"#66f"} />
                     <span className="text-base font-semibold tracking-wide">wavyware1@proton.me</span>
-                </div>
-                <div className="flex flex-col items-center gap-4 p-8 border-r border-b border-border bg-transparent hover:bg-muted/10 transition-colors">
-                    <Phone className="w-6 h-6 text-muted-foreground/60" strokeWidth={1.5} />
-                    <span className="text-base font-semibold tracking-wide">jeszcze nie ma</span>
-                </div>
+                </Link>
+                <Link href={"https://t.me/wavyware"} className="flex flex-col items-center gap-4 p-8 border-r border-b border-border bg-transparent hover:bg-muted/10 transition-colors">
+                    <RiTelegram2Line className="w-6 h-6 text-muted-foreground/60" color={"#26A5E4"}/>
+                    <span className="text-base font-semibold tracking-wide">@wavyware</span>
+                </Link>
+                <Link href={"https://www.linkedin.com/in/jan-florek-76b4072ab/"} className="flex flex-col items-center gap-4 p-8 border-r border-b border-border bg-transparent hover:bg-muted/10 transition-colors">
+                    <LuLinkedin className="w-6 h-6 text-muted-foreground/60" color={"#0077B5"}/>
+                    <span className="text-base font-semibold tracking-wide">Jan Florek</span>
+                </Link>
+                <Link href={"https://discordapp.com/users/560419681073233924"} className="flex flex-col items-center gap-4 p-8 border-r border-b border-border bg-transparent hover:bg-muted/10 transition-colors">
+                    <RxDiscordLogo className="w-6 h-6 text-muted-foreground/60" color={"#5865F2"}/>
+                    <span className="text-base font-semibold tracking-wide">@wavyware</span>
+                </Link>
             </div>
             <div className="mt-12 text-center text-xs text-muted-foreground font-medium uppercase tracking-widest">
                 {t("responseTime")}

@@ -24,7 +24,7 @@ export default function LanguageToggle({className}: Props) {
             variant="outline"
             value={locale}
             onValueChange={handleChange}
-            className={className}
+            className={className + "text-muted-foreground hover:bg-muted hover:text-foreground"}
             defaultValue={locale}
         >
             <ToggleGroupItem value="pl" aria-label="Polish">

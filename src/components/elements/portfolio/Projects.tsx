@@ -1,8 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import {Link} from '@/i18n/navigation';
-import { GitBranch, ExternalLink } from 'lucide-react';
 import {useTranslations} from "next-intl";
+import {FiGitBranch} from "react-icons/fi";
+import {HiExternalLink} from "react-icons/hi";
 
 
 export interface ProjectEntry {
@@ -59,12 +60,12 @@ export function Projects({ data, limit, title }: ProjectsProps) {
                                     <div className="flex gap-2 shrink-0 pt-1">
                                         {project.links.github && (
                                             <a href={project.links.github} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground transition-colors p-1" title="GitHub">
-                                                <GitBranch className="w-4 h-4" />
+                                                <FiGitBranch className="w-4 h-4" />
                                             </a>
                                         )}
                                         {project.links.demo && (
                                             <a href={project.links.demo} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground transition-colors p-1" title="Live Demo">
-                                                <ExternalLink className="w-4 h-4" />
+                                                <HiExternalLink className="w-4 h-4" />
                                             </a>
                                         )}
                                     </div>

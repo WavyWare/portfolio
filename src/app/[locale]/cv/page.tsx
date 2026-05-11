@@ -1,5 +1,5 @@
-import { FileText, Download } from "lucide-react";
 import {useTranslations} from "next-intl";
+import {LuDownload, LuFileText} from "react-icons/lu";
 
 export default function CVPage() {
     const t = useTranslations("CV");
@@ -13,10 +13,10 @@ export default function CVPage() {
                 {t("description")}
             </p>
             <div className="w-full bg-transparent p-12 border border-border flex flex-col items-center justify-center min-h-[45vh] hover:bg-muted/10 transition-colors duration-300">
-                <FileText className="w-12 h-12 text-muted-foreground/40 mb-6" strokeWidth={1} />
+                <LuFileText className="w-12 h-12 text-muted-foreground/40 mb-6" strokeWidth={1} />
                 <p className="text-muted-foreground mb-8 text-sm tracking-wide uppercase font-semibold">{t("previewUnavailable")}</p>
                 <button className="flex items-center gap-2 bg-foreground text-background px-8 py-3 rounded-full font-medium hover:bg-foreground/90 transition-all shadow-sm">
-                    <Download className="w-4 h-4" />
+                    <LuDownload className="w-4 h-4" />
                     {t("download")}
                 </button>
             </div>
