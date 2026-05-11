@@ -4,7 +4,6 @@ import {routing} from '@/i18n/routing';
 const handleI18nRouting = createMiddleware(routing);
 
 export default function proxy(request: Request) {
-    console.log('PROXY HIT');
     return handleI18nRouting(request as never);
 }
 
