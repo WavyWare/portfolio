@@ -8,6 +8,7 @@ import type { Metadata } from 'next'
 import {baseUrl, getPageMetadata, ParamsProps} from "@/metadata";
 import {competitionsData, educationData, experienceData, techData} from "./TimelineEntries";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export async function generateMetadata({params}: ParamsProps): Promise<Metadata> {
     const {locale} = await params;
@@ -37,6 +38,7 @@ export default function Home() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
             <Analytics />
+            <SpeedInsights />
             <div className="w-full flex flex-col gap-8 md:gap-16 mb-16">
                 <MyPresentation />
                 <Timeline data={educationData.map((i) => {
