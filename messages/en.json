@@ -62,5 +62,27 @@
     "title": "Contact",
     "cta": "Do you have a project to realize, or do you just want to talk about technologies and code? Write to me! I’m always open to new challenges and interesting collaborations.",
     "responseTime": "I usually respond within 24 hours."
+  },
+  "Metadata": {
+    "home": {
+      "title": "Jan Florek | Full-stack Developer",
+      "description": "Portfolio of Jan Florek - Next.js & Node.js developer. Projects, CV, Contact"
+    },
+    "about": {
+      "title": "About me",
+      "description": "Learn about my experience, tech stack, and passion for building software."
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "Selected projects: web apps, APIs, and open source tools."
+    },
+    "cv": {
+      "title": "CV",
+      "description": "My professional experience, education and technical skills."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch - happy to talk about collaboration or a project idea."
+    }
   }
 }

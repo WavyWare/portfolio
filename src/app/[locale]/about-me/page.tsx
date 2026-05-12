@@ -1,5 +1,13 @@
 import Image from "next/image";
 import {useTranslations} from "next-intl";
+import {getPageMetadata, ParamsProps} from "@/metadata";
+import type {Metadata} from "next";
+
+export async function generateMetadata({params}: ParamsProps): Promise<Metadata> {
+    const {locale} = await params;
+
+    return getPageMetadata({namespace: "about", locale, pathName: "/about-me"});
+}
 
 export default function AboutMePage() {
     const t = useTranslations("AboutMe");
@@ -22,13 +30,13 @@ export default function AboutMePage() {
                     </div>
                 </div>
                 <div className="flex-1 flex justify-center w-full">
-                    <div className="relative p-2 w-full max-w-[350px]">
+                    <div className="relative p-2 w-full max-w-87.5">
                         <Image 
                             src="/example.png" 
                             width={350} 
                             height={450} 
                             alt="O mnie" 
-                            className="w-full object-cover grayscale hover:grayscale-0 rounded-none border border-border/60 shadow-md transition-all duration-700 aspect-[3/4]"
+                            className="w-full object-cover grayscale hover:grayscale-0 rounded-none border border-border/60 shadow-md transition-all duration-700 aspect-3/4"
                             priority
                         />
                     </div>

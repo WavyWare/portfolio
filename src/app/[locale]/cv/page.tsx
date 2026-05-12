@@ -1,5 +1,13 @@
 import {useTranslations} from "next-intl";
 import {LuDownload, LuFileText} from "react-icons/lu";
+import type {Metadata} from "next";
+import {getPageMetadata, ParamsProps} from "@/metadata";
+
+export async function generateMetadata({params}: ParamsProps): Promise<Metadata> {
+    const {locale} = await params;
+
+    return getPageMetadata({namespace: "cv", locale, pathName: "/cv", ogImageUrl: "cv-og.png"});
+}
 
 export default function CVPage() {
     const t = useTranslations("CV");

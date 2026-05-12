@@ -24,8 +24,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jan Florek",
-  description: "Portfolio",
+    metadataBase: new URL('https://florek.dev'),
+    title: {
+        default: 'Jan Florek',
+        template: '%s | Jan Florek'
+    },
+    applicationName: 'Jan Florek Portfolio',
+    authors: [{name: 'Jan Florek', url: 'https://florek.dev'}],
+    creator: 'Jan Florek',
+    publisher: 'Jan Florek',
+    referrer: 'origin-when-cross-origin',
+
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+            'max-video-preview': -1
+        }
+    },
+    openGraph: {
+        siteName: 'Jan Florek Portfolio',
+        type: 'website'
+    },
 };
 
 export function generateStaticParams() {
@@ -53,9 +77,9 @@ export default async function LocaleLayout(props: LayoutProps<'/[locale]'>) {
               <div className="fixed inset-0 -z-10 bg-background/80">
                   <Image src="/grid.png" alt="tło strony" fill className="object-cover opacity-40" priority/>
                 </div>
-                <div className="w-full flex-grow flex flex-col items-center">
+                <div className="w-full grow flex flex-col items-center">
                   <Navbar />
-                  <main className="w-full max-w-5xl px-4 md:px-8 py-8 flex-grow flex flex-col items-center">
+                  <main className="w-full max-w-5xl px-4 md:px-8 py-8 grow flex flex-col items-center">
                       {props.children}
                   </main>
                 </div>

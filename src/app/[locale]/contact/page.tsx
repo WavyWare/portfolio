@@ -4,6 +4,14 @@ import {Link} from "@/i18n/navigation";
 import {RiMailLine, RiTelegram2Line} from "react-icons/ri";
 import {LuLinkedin} from "react-icons/lu";
 import {RxDiscordLogo} from "react-icons/rx";
+import {getPageMetadata, ParamsProps} from "@/metadata";
+import type {Metadata} from "next";
+
+export async function generateMetadata({params}: ParamsProps): Promise<Metadata> {
+    const {locale} = await params;
+
+    return getPageMetadata({namespace: "contact", locale});
+}
 
 export default function ContactPage() {
     const t = useTranslations("Contact");

@@ -8,7 +8,7 @@ export default function Footer() {
         <footer className="w-full bg-muted/40 border-t border-border mt-auto">
             <div className="max-w-5xl mx-auto px-4 py-8 md:py-12 flex flex-col md:flex-row justify-between items-center gap-6">
                 <div className="flex flex-col items-center md:items-start">
-                    <h3 className="text-lg font-semibold bg-gradient-to-r from-gray-900 to-gray-500 bg-clip-text text-transparent dark:from-gray-100 dark:to-gray-500">Jan Florek</h3>
+                    <h3 className="text-lg font-semibold bg-linear-to-r from-gray-900 to-gray-500 bg-clip-text text-transparent dark:from-gray-100 dark:to-gray-500">Jan Florek</h3>
                     <p className="text-sm text-muted-foreground mt-1 text-center md:text-left">
                         Web development.
                     </p>
