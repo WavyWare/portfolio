@@ -22,7 +22,7 @@ export function Technologies({ data, title }: TechnologiesProps) {
                 {data.map((tech, idx) => (
                     <div 
                         key={idx} 
-                        className="group flex flex-col items-center justify-center p-8 border-b border-r border-border hover:bg-muted/30 transition-colors duration-200 cursor-default"
+                        className="group flex flex-col items-center justify-center p-8 border-b border-r border-border hover:bg-muted/30 transition-colors duration-200 cursor-default bg-white"
                     >
                         <div className="text-muted-foreground opacity-60 group-hover:opacity-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-all duration-300 mb-4 scale-110">
                             {tech.icon}
