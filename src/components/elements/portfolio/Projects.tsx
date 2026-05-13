@@ -56,24 +56,24 @@ export function Projects({ data, limit, title }: ProjectsProps) {
                         <div className="flex flex-col grow">
                             <div className="flex items-start justify-between gap-4 mb-3">
                                 <h3 className="text-2xl font-bold tracking-tight font-sans leading-tight">{project.title}</h3>
-                                {project.links && (
-                                    <div className="flex gap-2 shrink-0 pt-1">
-                                        {project.links.github && (
-                                            <a href={project.links.github} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground transition-colors p-1" title="GitHub">
-                                                <FiGitBranch className="w-4 h-4" />
-                                            </a>
-                                        )}
-                                        {project.links.demo && (
-                                            <a href={project.links.demo} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground transition-colors p-1" title="Live Demo">
-                                                <HiExternalLink className="w-4 h-4" />
-                                            </a>
-                                        )}
-                                    </div>
-                                )}
                             </div>
                             <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
                                 {project.description}
                             </p>
+                            {project.links && (
+                                <div className="flex gap-2 shrink-0 pt-1">
+                                    {project.links.github && (
+                                        <a href={project.links.github} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground transition-colors p-1 flex items-center justify-center gap-1 bg-muted rounded-full px-2" title="GitHub">
+                                            <FiGitBranch className="w-4 h-4" /> {projectsT("source")}
+                                        </a>
+                                    )}
+                                    {project.links.demo && (
+                                        <a href={project.links.demo} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground transition-colors p-1 flex items-center justify-center gap-1 bg-muted rounded-full px-2" title="Live Demo">
+                                            <HiExternalLink className="w-4 h-4" /> Demo
+                                        </a>
+                                    )}
+                                </div>
+                            )}
                         </div>
                     </div>
                 ))}

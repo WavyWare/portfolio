@@ -27,7 +27,7 @@ export function Timeline({ data, title }: TimelineProps) {
             <div className="relative border-l border-border/80 ml-2 md:ml-3 mt-6">
                 {data.map((item, idx) => (
                     <div key={idx} className="relative pl-6 md:pl-10 group pb-10 last:pb-0">
-                        <div className="absolute w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full -left-[4.5px] top-2 shadow-[0_0_0_4px_var(--background)]" />
+                        <div className="absolute w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full left-[-4.5px] top-2 shadow-[0_0_0_4px_var(--background)]" />
                         <div className="pt-0.5">
                             <span className="text-xs font-semibold text-blue-600 dark:text-blue-400 tracking-widest uppercase mb-2 block">
                                 {item.date}

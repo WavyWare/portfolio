@@ -46,7 +46,8 @@
   },
   "Projects": {
     "showAll": "Zobacz wszystkie projekty",
-    "allProjects": "Wszystkie projekty"
+    "allProjects": "Wszystkie projekty",
+    "source": "Kod źródłowy"
   },
   "AboutMe": {
     "title": "O mnie",
