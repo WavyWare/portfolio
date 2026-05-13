@@ -9,10 +9,10 @@ export const MyPresentation = () => {
         <section className="w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12 py-12 md:py-20">
             <div className="flex flex-col items-center md:items-start justify-center flex-1 space-y-6 md:space-y-8 text-center md:text-left">
                 <div className="space-y-3">
-                    <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-foreground font-serif">
+                    <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-foreground font-sans">
                         Jan Florek
                     </h1>
-                    <h2 className="text-xl md:text-2xl font-medium text-blue-600 dark:text-blue-400 font-serif tracking-widest uppercase">
+                    <h2 className="text-xl md:text-2xl font-medium text-blue-600 dark:text-blue-400 font-sans tracking-widest uppercase">
                         Web Developer
                     </h2>
                 </div>

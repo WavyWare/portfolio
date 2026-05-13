@@ -17,7 +17,7 @@ export default function ContactPage() {
     const t = useTranslations("Contact");
     return (
         <div className="w-full max-w-2xl mx-auto flex flex-col pt-12 md:pt-20 mb-20 px-4">
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-foreground font-serif mb-6 text-center">
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-foreground font-sans mb-6 text-center">
                 {t("title")}
             </h1>
             <div className="w-16 h-px bg-border mx-auto mb-10"></div>

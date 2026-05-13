@@ -15,7 +15,7 @@ export default function AboutMePage() {
         <div className="w-full flex justify-center pt-12 md:pt-20 mb-20 px-4">
             <section className="flex flex-col md:flex-row items-center gap-12 md:gap-16 max-w-5xl">
                 <div className="flex-1 space-y-6">
-                    <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-foreground font-serif">
+                    <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-foreground font-sans">
                         {t("title")}
                     </h1>
                     <div className="w-16 h-px bg-border"></div>

@@ -21,7 +21,7 @@ export function Timeline({ data, title }: TimelineProps) {
 
     return (
         <section className="w-full py-8 space-y-6">
-            <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-foreground font-serif">
+            <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-foreground font-sans">
                 {title}
             </h2>
             <div className="relative border-l border-border/80 ml-2 md:ml-3 mt-6">
@@ -40,7 +40,7 @@ export function Timeline({ data, title }: TimelineProps) {
                                 )}
                                 <div>
                                     <h3 className="text-xl md:text-2xl font-bold tracking-tight text-foreground leading-snug">{item.title}</h3>
-                                    <h4 className="text-sm md:text-base font-serif text-muted-foreground italic mt-0.5">{item.subtitle}</h4>
+                                    <h4 className="text-sm md:text-base font-sans text-muted-foreground italic mt-0.5">{item.subtitle}</h4>
                                 </div>
                             </div>
                             <ul className="space-y-1.5 text-muted-foreground text-sm md:text-base pl-5 list-disc mt-3 marker:text-muted-foreground/50">

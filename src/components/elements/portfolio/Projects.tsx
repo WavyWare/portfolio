@@ -38,13 +38,13 @@ export function Projects({ data, limit, title }: ProjectsProps) {
 
     return (
         <section className="w-full py-12 space-y-8">
-            <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-foreground font-serif border-b border-border pb-4">
+            <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-foreground font-sans border-b border-border pb-4">
                 {title}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-4">
                 {displayData.map((project, idx) => (
                     <div key={idx} className="group flex flex-col gap-5">
-                        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-border/80 bg-muted/20 shrink-0">
+                        <div className="relative aspect-4/3 w-full overflow-hidden rounded-xl border border-border/80 bg-muted/20 shrink-0">
                             <Image 
                                 src={project.image} 
                                 alt={project.title} 
@@ -53,9 +53,9 @@ export function Projects({ data, limit, title }: ProjectsProps) {
                                 className="object-cover transition-all duration-500 group-hover:scale-105"
                             />
                         </div>
-                        <div className="flex flex-col flex-grow">
+                        <div className="flex flex-col grow">
                             <div className="flex items-start justify-between gap-4 mb-3">
-                                <h3 className="text-2xl font-bold tracking-tight font-serif leading-tight">{project.title}</h3>
+                                <h3 className="text-2xl font-bold tracking-tight font-sans leading-tight">{project.title}</h3>
                                 {project.links && (
                                     <div className="flex gap-2 shrink-0 pt-1">
                                         {project.links.github && (

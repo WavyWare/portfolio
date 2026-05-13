@@ -15,7 +15,7 @@ export function Technologies({ data, title }: TechnologiesProps) {
 
     return (
         <section className="w-full py-12 space-y-2">
-            <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-foreground font-serif">
+            <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-foreground font-sans">
                 {title}
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-0 border-t border-l border-border mt-4">
